@@ -1,7 +1,9 @@
 # !IMPORTANT
 ---
 
-## this is an old version of my "portfolio" / "CV"
+## this is almost up-to-date of my "portfolio" / "CV"
 ---
-## will be updated, hopefully in April, and will be translated too
+## updated: June 21, 2022 
+
+### and will be translated to Enlish too, just have to find time for it...
 ---
