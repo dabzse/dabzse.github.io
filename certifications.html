@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/tailwind-2.2.19.min.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/bootstrap-5.3.1.min.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/cert.css" type="text/css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
@@ -32,516 +33,472 @@
         </article>
 
         <hr>
+        <div id="filter_content">
+            <button class="btn rounded-pill" onclick="filter_selection('all')">Minden</button>
+            <button class="btn rounded-pill" onclick="filter_selection('sl')">SoloLearn</button>
+            <button class="btn rounded-pill" onclick="filter_selection('gh')">GrassHopper</button>
+            <button class="btn rounded-pill" onclick="filter_selection('python')">Python, R, DS, ML</button>
+            <button class="btn rounded-pill" onclick="filter_selection('web')">Web + SQL</button>
+            <button class="btn rounded-pill" onclick="filter_selection('cj')">C, CPP, C#, Java</button>
+            <button class="btn rounded-pill" onclick="filter_selection('other')">A többi</button>
+
         <h3>SoloLearn certifications</h3>
-        <div class="grid grid-cols-4 gap-4">
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+        <div class="row">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/C_certificate.jpg"
                         alt="C"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">C</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">C</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/CPlusPlus_certificate.png"
                         alt="C++"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">C++</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">C++</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/CSharp_certificate.png"
                         alt="C#"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">C#</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">C#</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl other">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/coding-marketers_certificate.jpg"
                         alt="Coding for Marketers"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Coding for Marketers
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Coding for Marketers</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/HTML_certificate.jpg"
                         alt="HTML"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">HTML</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">HTML</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/CSS_certificate.jpg"
                         alt="CSS"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">CSS</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">CSS</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/JavaScript_certificate.png"
                         alt="JavaScript"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">JavaScript</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">JavaScript</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/jQuery_certificate.jpg"
                         alt="jQuery"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">jQuery</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">jQuery</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/react_certificate.jpg"
                         alt="React + Redux"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">React + Redux</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">React + Redux</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Responsive-Web-Design_certificate.jpg"
                         alt="Responsive Web Design"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Responsive Web Design
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Responsive Web Design</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/web-dev-basics_certificate.jpg"
                         alt="Web Development Fundamentals course"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Web Development Fundamentals course
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Web Development Fundamentals course</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/PHP_certificate.jpg"
                         alt="PHP"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">PHP</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">PHP</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/SQL_certificate.png"
                         alt="SQL"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">SQL</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">SQL</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/data-science_certificate.png"
                         alt="Data Science"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Data Science</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Data Science</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Python-for-Beginners_certificate.png"
                         alt="Python for Beginners"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Python for Beginners
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Python for Beginners</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Python_certificate.png"
                         alt="Python Core"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Python Core</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Python Core</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Intermediate_Python_certificate.png"
                         alt="Intermediate Python"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Intermediate Python
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Intermediate Python</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Python-for-Data-Science_certificate.png"
                         alt="Python for Data Science"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Python for Data Science
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Python for Data Science</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Python-Data-Structures_certificate.png"
                         alt="Python Data Structures"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Python Data Structures
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Python Data Structures</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Python-for-Finance_certificate.jpg"
                         alt="Python for Finance"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Python for Finance
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Python for Finance</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/machine-learning_certificate.png"
                         alt="Machine Learning"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Machine Learning</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Machine Learning</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/GameDev-with-JavaScript_certificate.jpg"
                         alt="Game Development with JavaScript"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Game Development with JavaScript
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Game Development with JavaScript</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl other">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/kotlin_certificate.png"
                         alt="Kotlin"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Kotlin</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Kotlin</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Java_certificate.png"
                         alt="Java"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Java</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Java</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl other">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Ruby_certificate.jpg"
                         alt="Ruby"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Ruby</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Ruby</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl python">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/r-course_certificate.png"
                         alt="R"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">R</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">R</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl other">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/go_certificate.png"
                         alt="Go"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Go</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Go</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/fullstack_certificate.jpg"
-                        alt="Angular + NestJS course"
-                        width="200"
+                        alt="Angular + NestJS"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Angular + NestJS course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Angular + NestJS</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl other">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Swift_certificate.jpg"
-                        alt="Swift 4 course"
-                        width="200"
+                        alt="Swift 4"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Swift 4 course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Swift 4</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl web">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/SQL_Intermediate_certificate.jpg"
-                        alt="SQL Intermediate course"
-                        width="200"
+                        alt="SQL Intermediate"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">SQL Intermediate course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">SQL Intermediate</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl other">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/Tech_for_Everyone_certificate.jpg"
                         alt="Tech for Everyone"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Tech for Everyone</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Tech for Everyone</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/C_Intermediate_certificate.jpg"
-                        alt="C Intermediate course"
-                        width="200"
+                        alt="C Intermediate"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">C Intermediate course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">C Intermediate</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/CPlusPlus_Intermediate_certificate.png"
-                        alt="C++ Intermediate course"
-                        width="200"
+                        alt="C++ Intermediate"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">C++ Intermediate course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">C++ Intermediate</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column sl cj">
+                <div class="content">
                     <img
                         src="./assets/images/SoloLearn/CSharp_Intermediate_certificate.jpg"
-                        alt="C# Intermediate course"
-                        width="200"
+                        alt="C# Intermediate"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">C# Intermediate course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">C# Intermediate</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
-                    <img src="./assets/images/SoloLearn/Java_Intermediate_certificate.jpg" alt="Java Intermediate course"
-                        width="200" class="border border-4 border-primary rounded">
+            <div class="column sl cj">
+                <div class="content">
+                    <img
+                        src="./assets/images/SoloLearn/Java_Intermediate_certificate.jpg"
+                        alt="Java Intermediate"
+                        class="border border-4 border-primary rounded"
+                    >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Java Intermediate course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Java Intermediate</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
-                    <img src="./assets/images/SoloLearn/Python_Developer_certificate.jpg" alt="Python Developer course"
-                        width="200" class="border border-4 border-primary rounded">
+            <div class="column sl python">
+                <div class="content">
+                    <img
+                        src="./assets/images/SoloLearn/Python_Developer_certificate.jpg"
+                        alt="Python Developer"
+                        class="border border-4 border-primary rounded"
+                    >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Python Developer course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Python Developer</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
-                    <img src="./assets/images/SoloLearn/Introduction_to_SQL.png" alt="Introduction to SQL course"
-                        width="200" class="border border-4 border-primary rounded">
+            <div class="column sl web">
+                <div class="content">
+                    <img
+                        src="./assets/images/SoloLearn/Introduction_to_SQL.png"
+                        alt="Introduction to SQL"
+                        class="border border-4 border-primary rounded"
+                    >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Introduction to SQL course</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Introduction to SQL</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
-                    <img src="./assets/images/SoloLearn/Introduction_to_Python_certificate.png" alt="Introduction to Python course"
-                        width="200" class="border border-4 border-primary rounded">
+            <div class="column sl python">
+                <div class="content">
+                    <img
+                        src="./assets/images/SoloLearn/Introduction_to_Python_certificate.png"
+                        alt="Introduction to Python"
+                        class="border border-4 border-primary rounded"
+                    >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Introduction to Python</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Introduction to Python</p>
             </div>
         </div>
 
         <hr>
 
         <h3>GrassHopper certification (it is closed down since June 15, 2023.)</h3>
-        <div class="grid grid-cols-4 gap-4">
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+        <div class="row">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Coding_Fundamentals_1.png"
                         alt="Coding Fundamentals 1"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Coding Fundamentals 1
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Coding Fundamentals 1</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Coding_Fundamentals_2.png"
                         alt="Coding Fundamentals 2"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Coding Fundamentals 2
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Coding Fundamentals 2</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Intro_to_Interviewing.png"
                         alt="Intro to Interviewing"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">
-                    Intro to Interviewing
-                </p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Intro to Interviewing</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Array_Methods.png"
                         alt="Array Methods"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Array Methods</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Array Methods</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Animations_1.png"
                         alt="Animations 1"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Animations 1</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Animations 1</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Animations_2.png"
                         alt="Animations 2"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Animations 2</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Animations 2</p>
             </div>
-            <div class="justify-self-center text-center my-4">
-                <div class="flex justify-center">
+            <div class="column gh">
+                <div class="content">
                     <img
                         src="./assets/images/GrassHopper/Debugging_Code.png"
                         alt="Debugging Code"
-                        width="200"
                         class="border border-4 border-primary rounded"
                     >
                 </div>
-                <p class="text-lg text-gray-700 font-bold">Debugging Code</p>
+                <p class="text-lg text-gray-700 font-bold justify-self-center text-center my-4">Debugging Code</p>
             </div>
         </div>
 
@@ -549,5 +506,6 @@
             Copyright &copy; <strong>@dabzse &mdash; <em>{{ MNY }}</em></strong> &mdash; 2023
         </div>
     </div>
+    <script src="./assets/js/filter.js"></script>
 </body>
 </html>

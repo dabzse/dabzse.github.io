@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row, .row>.column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    display: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding: 4px;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: e4e5f4;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e4e5f4;
+}
+
+.btn.active {
+    background-color: #1982e4;
+    color: #ffffff;
+}
+
+.btn:focus {
+    outline: none;
+}
