@@ -50,7 +50,3 @@ body {
     background-color: #1982e4;
     color: #ffffff;
 }
-
-.btn:focus {
-    outline: none;
-}
