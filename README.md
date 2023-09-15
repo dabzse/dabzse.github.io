@@ -6,7 +6,7 @@
 
 ---
 
-## updated: August 25, 2023
+## updated: Sept 5, 2023
 
 ### and maybe will be translated to English too, just have to find time for it
 
